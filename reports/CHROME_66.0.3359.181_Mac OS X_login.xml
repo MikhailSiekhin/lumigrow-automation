@@ -1,36 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="1"
-            failures="1"
-            tests="1">
+<testsuites errors="0"
+            failures="0"
+            tests="2">
 
   <testsuite name="login"
-    errors="1" failures="1" hostname="" id="" package="login" skipped="0"
-    tests="1" time="18.33" timestamp="Tue, 29 May 2018 12:36:22 GMT">
+    errors="0" failures="0" hostname="" id="" package="login" skipped="0"
+    tests="2" time="7.031" timestamp="Tue, 05 Jun 2018 14:02:47 GMT">
   
-    <testcase name="User Logs in" classname="login" time="18.33" assertions="3">
+    <testcase name="auth" classname="login" time="6.270" assertions="2">
 
     
 
-      <failure message="Expected element &lt;a[href=&#34;/#!/zones&#34;]&gt; text to contain: &#34;ZONES&#34; - element was not found">    at Object.User Logs in (/Users/user/lumigrow-automation/tests/login.js:10:21)</failure>
+    
+    </testcase>
+  
+    <testcase name="User Logs in" classname="login" time="0.7610" assertions="1">
 
     
     </testcase>
   
 
-  
-    <system-err>
-      ERROR: Unable to locate element: &#34;#loginpassword22&#34; using: css selector
-    at Page.setValue (/Users/user/lumigrow-automation/node_modules/nightwatch/lib/page-object/command-wrapper.js:117:25)
-    at Page.login (/Users/user/lumigrow-automation/pages/loginPage.js:7:14)
-    at Object.User Logs in (/Users/user/lumigrow-automation/tests/login.js:7:14)
-    at Module.call (/Users/user/lumigrow-automation/node_modules/nightwatch/lib/runner/module.js:62:34)
-    at /Users/user/lumigrow-automation/node_modules/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/user/lumigrow-automation/node_modules/q/q.js:834:54)
-    at /Users/user/lumigrow-automation/node_modules/q/q.js:863:30
-    at Promise.promise.promiseDispatch (/Users/user/lumigrow-automation/node_modules/q/q.js:796:13)
-    at /Users/user/lumigrow-automation/node_modules/q/q.js:556:49
-    at runSingle (/Users/user/lumigrow-automation/node_modules/q/q.js:137:13)
-    </system-err>
   
 
   

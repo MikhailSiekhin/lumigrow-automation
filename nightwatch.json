@@ -35,7 +35,7 @@
                 "acceptSslCerts": true,
                 "chromeOptions": {
           "args": [
-              "window-size=1440,1024"
+              "start-fullscreen"
           ]
         }
             },

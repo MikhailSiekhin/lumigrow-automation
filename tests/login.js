@@ -1,14 +1,12 @@
+let zonesPage = require('../pages/zonesPage.js');
+let operationsPage = require('../pages/operationsPage.js');
+
 module.exports = {
-    'User Logs in': (client) => {
-        const loginPage = client.page.loginPage();
-        const zonesPage = client.page.zonesPage();
-
-        loginPage
-            .login("mikhail.siekhin", "Password1");
-
-        zonesPage
-            .expect.element('@zonesLink').text.to.contain("ZONES");
-
-        client.end();
+    'Authenticate': operationsPage.login("mikhail.siekhin", "Password1"),
+    'User Logs in': (browser) =>  {
+        browser
+            .expect.element(zonesPage.zonesLink).text.to.contain("ZONES");
+        browser
+            .end();
     }
 };

@@ -3,20 +3,20 @@
             failures="0"
             tests="1">
 
-  <testsuite name="login"
-    errors="1" failures="0" hostname="" id="" package="login" skipped="0"
-    tests="1" time="0.007000" timestamp="Tue, 05 Jun 2018 13:58:52 GMT">
+  <testsuite name="createDLI"
+    errors="1" failures="0" hostname="" id="" package="createDLI" skipped="0"
+    tests="1" time="0.01100" timestamp="Tue, 05 Jun 2018 13:47:52 GMT">
   
-    <testcase name="User Logs in" classname="login" time="0.007000" assertions="0">
+    <testcase name="Create DLI program" classname="createDLI" time="0.01100" assertions="0">
     </testcase>
   
 
   
     <system-err>
-        Error while running [Login / User Logs in]:
+        Error while running [Create DLI / Create DLI program]:
 
-  TypeError: Cannot read property &#39;element&#39; of undefined
-    at Object.User Logs in (/Users/user/lumigrow-automation/tests/login.js:11:21)
+  TypeError: programsPage.createDLI is not a function
+    at Object.Create DLI program (/Users/user/lumigrow-automation/tests/createDLI.js:10:14)
     at Module.call (/Users/user/lumigrow-automation/node_modules/nightwatch/lib/runner/module.js:62:34)
     at /Users/user/lumigrow-automation/node_modules/nightwatch/lib/runner/testcase.js:70:29
     at _fulfilled (/Users/user/lumigrow-automation/node_modules/q/q.js:834:54)
